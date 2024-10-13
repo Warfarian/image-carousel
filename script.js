@@ -35,3 +35,10 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+
+function slideIndexSet(slideIndex){
+    slides.forEach(slide =>{
+        slide.classList.remove("displaySlide");
+    })
+    slides[slideIndex].classList.add("displaySlide");
+};
